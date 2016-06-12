@@ -1,8 +1,10 @@
 var app = angular.module('myApp', []);
 
-app.directive('yoYo', function() {
+app.directive('optIn', function() {
     return {
         restrict: 'E',
-        template: '<div class="yo-yo">Yo!</div>',
+        transclude: true,
+        templateUrl: 'opt-in.html',
+        replace: true
     };
 });
